@@ -1,9 +1,13 @@
-var x = 1;
+var counter = 1;
 
 function addCounter() {
-	console.log(x++);
+	console.log(counter++);
 }
 
-setInterval(function() {
+var counterPromise = setInterval(function() {
+	if (counter >= 5) {
+		clearInterval(counterPromise)
+	}
+
 	addCounter();
-}, 2000);
+}, 1000);
