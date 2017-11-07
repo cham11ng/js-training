@@ -27,3 +27,17 @@ console.log(person.name);
 person[keyName] = 30;
 console.log(person[keyName]);
 
+var x = 4;
+switch (x) {
+	case 4:
+		console.log("value is 4");
+		break;
+
+	case 2:
+		console.log("value is 2");
+		break
+
+	default:
+		console.log("value is something else");
+}
+
