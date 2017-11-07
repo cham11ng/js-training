@@ -10,7 +10,7 @@ var fruits = ["Apple", "Mango", "Banana"];
 console.log(fruits);
 console.log(fruits.length);
 
-fruits.push("Tomato")
+fruits.push("Tomato");
 console.log(fruits);
 
 var person = {
@@ -47,3 +47,27 @@ for (var i = 0; i < objectKeys.length; i++) {
 	var key = objectKeys[i];
 	console.log(key, person[key]);
 }
+
+function getSum(number1, number2) {
+	return number1 + number2;
+}
+console.log("Normal: "+ getSum(3, 4));
+
+// Function as variable
+var addNumber = function(number1, number2) {
+	return number1 + number2;
+}
+console.log("Variable Function: " + addNumber(1, 2));
+
+// Function as object
+var book = {
+	name: "ng-book",
+	author: "Ari Lerner",
+	printData: function() {
+		console.log("Book Name: ", this.name);
+		console.log("Author: ", this.author);
+	}
+};
+
+book.printData();
+
