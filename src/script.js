@@ -41,3 +41,9 @@ switch (x) {
 		console.log("value is something else");
 }
 
+var objectKeys = Object.keys(person);
+
+for (var i = 0; i < objectKeys.length; i++) {
+	var key = objectKeys[i];
+	console.log(key, person[key]);
+}
